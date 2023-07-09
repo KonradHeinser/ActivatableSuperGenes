@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+    <Operation Class="PatchOperationRemove">
+        <xpath>Defs/GeneDef[defName="SuperDurability"]/statOffsets</xpath>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/GeneDef[defName="SuperDurability"]</xpath>
+        <value>
+            <abilities>
+                <li>SuperDurability</li>
+            </abilities>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/GeneDef[defName="SuperHealing"]/statFactors</xpath>
+        <value>
+            <statFactors>
+                <LifespanFactor>3</LifespanFactor>
+            </statFactors>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationRemove">
+        <xpath>Defs/GeneDef[defName="SuperHealing"]/statOffsets</xpath>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/GeneDef[defName="SuperHealing"]</xpath>
+        <value>
+            <abilities>
+                <li>SuperHealing</li>
+            </abilities>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationRemove">
+        <xpath>Defs/GeneDef[defName="SuperIntelligence"]/statFactors</xpath>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/GeneDef[defName="SuperIntelligence"]</xpath>
+        <value>
+            <abilities>
+                <li>SuperIntelligence</li>
+            </abilities>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationRemove">
+        <xpath>Defs/GeneDef[defName="SuperPerception"]/statFactors</xpath>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/GeneDef[defName="SuperPerception"]</xpath>
+        <value>
+            <abilities>
+                <li>SuperPerception</li>
+            </abilities>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/GeneDef[defName="SuperPersuasion"]/statFactors</xpath>
+        <value>
+            <statFactors>
+                <Beauty>5</Beauty>
+            </statFactors>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationRemove">
+        <xpath>Defs/GeneDef[defName="SuperPersuasion"]/capMods/li[2]</xpath>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/GeneDef[defName="SuperPersuasion"]</xpath>
+        <value>
+            <abilities>
+                <li>SuperPersuasion</li>
+            </abilities>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationRemove">
+        <xpath>Defs/GeneDef[defName="SuperPrecision"]/statFactors</xpath>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/GeneDef[defName="SuperPrecision"]</xpath>
+        <value>
+            <abilities>
+                <li>SuperPrecision</li>
+            </abilities>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationRemove">
+        <xpath>Defs/GeneDef[defName="SuperSpeed"]/statFactors</xpath>
+    </Operation>
+
+    <Operation Class="PatchOperationRemove">
+        <xpath>Defs/GeneDef[defName="SuperSpeed"]/statOffsets</xpath>
+    </Operation>
+
+    <Operation Class="PatchOperationRemove">
+        <xpath>Defs/GeneDef[defName="SuperSpeed"]/capMods/li[3]</xpath>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/GeneDef[defName="SuperSpeed"]</xpath>
+        <value>
+            <abilities>
+                <li>SuperSpeed</li>
+            </abilities>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationRemove">
+        <xpath>Defs/GeneDef[defName="SuperStrength"]/statFactors</xpath>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/GeneDef[defName="SuperStrength"]</xpath>
+        <value>
+            <abilities>
+                <li>SuperStrength</li>
+            </abilities>
+        </value>
+    </Operation>
+</Patch>

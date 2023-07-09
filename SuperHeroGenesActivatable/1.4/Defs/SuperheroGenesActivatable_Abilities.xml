@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <AbilityDef Abstract="True" Name="SuperActivatableAbilityBase">
+        <jobDef>CastAbilityOnThing</jobDef>
+        <targetRequired>False</targetRequired>
+        <canUseAoeToGetTargets>False</canUseAoeToGetTargets>
+        <warmupMoteSocialSymbol>UI/Abilities/CombatCommand</warmupMoteSocialSymbol>
+        <stunTargetWhileCasting>True</stunTargetWhileCasting>
+        <showPsycastEffects>False</showPsycastEffects>
+        <displayGizmoWhileUndrafted>True</displayGizmoWhileUndrafted>
+        <disableGizmoWhileUndrafted>False</disableGizmoWhileUndrafted>
+        <warmupStartSound>CombatCommand_Warmup</warmupStartSound>
+        <aiCanUse>true</aiCanUse>
+        <cooldownTicksRange>2500</cooldownTicksRange>
+        <statBases>
+          <Ability_Duration>21</Ability_Duration>
+        </statBases>
+        <verbProperties>
+          <verbClass>Verb_CastAbility</verbClass>
+          <warmupTime>0.1</warmupTime>
+          <range>0.9</range>
+          <drawAimPie>False</drawAimPie>
+          <requireLineOfSight>False</requireLineOfSight>
+          <targetParams>
+            <canTargetSelf>true</canTargetSelf>
+            <canTargetPawns>false</canTargetPawns>
+            <canTargetBuildings>false</canTargetBuildings>
+            <canTargetAnimals>false</canTargetAnimals>
+            <canTargetHumans>false</canTargetHumans>
+            <canTargetMechs>false</canTargetMechs>
+          </targetParams>
+        </verbProperties>
+    </AbilityDef>
+
+    <AbilityDef ParentName="SuperActivatableAbilityBase">
+        <defName>SuperDurability</defName>
+        <label>super durability</label>
+        <description>With considerable focus, the skin can be hardened to be nigh-impenetrable.</description>
+        <iconPath>Base/SuperDurability</iconPath>
+        <comps>
+          <li Class="CompProperties_AbilityGiveHediff">
+            <compClass>CompAbilityEffect_GiveHediff</compClass>
+            <hediffDef>SuperDurability</hediffDef>
+            <onlyBrain>True</onlyBrain>
+            <onlyApplyToSelf>True</onlyApplyToSelf>
+            <replaceExisting>true</replaceExisting>
+          </li>
+        </comps>
+    </AbilityDef>
+
+    <AbilityDef ParentName="SuperActivatableAbilityBase">
+        <defName>SuperHealing</defName>
+        <label>super healing</label>
+        <description>By forcefully accelerating the heart, healing and immunity rates can be drastically increased for a time.</description>
+        <iconPath>Base/SuperHealing</iconPath>
+        <comps>
+          <li Class="CompProperties_AbilityGiveHediff">
+            <compClass>CompAbilityEffect_GiveHediff</compClass>
+            <hediffDef>SuperHealing</hediffDef>
+            <onlyBrain>True</onlyBrain>
+            <onlyApplyToSelf>True</onlyApplyToSelf>
+            <replaceExisting>true</replaceExisting>
+          </li>
+        </comps>
+    </AbilityDef>
+
+    <AbilityDef ParentName="SuperActivatableAbilityBase">
+        <defName>SuperIntelligence</defName>
+        <label>super intelligence</label>
+        <description>Enter a brief moment of extreme concentration, during which all truths may be revealed.</description>
+        <iconPath>Base/SuperIntelligence</iconPath>
+        <aiCanUse>false</aiCanUse>
+        <comps>
+          <li Class="CompProperties_AbilityGiveHediff">
+            <compClass>CompAbilityEffect_GiveHediff</compClass>
+            <hediffDef>SuperIntelligence</hediffDef>
+            <onlyBrain>True</onlyBrain>
+            <onlyApplyToSelf>True</onlyApplyToSelf>
+            <replaceExisting>true</replaceExisting>
+          </li>
+        </comps>
+    </AbilityDef>
+
+    <AbilityDef ParentName="SuperActivatableAbilityBase">
+        <defName>SuperPerception</defName>
+        <label>super perception</label>
+        <description>Opening the mind can reveal much in the area that may have been difficult to notice before.</description>
+        <iconPath>Base/SuperPerception</iconPath>
+        <comps>
+          <li Class="CompProperties_AbilityGiveHediff">
+            <compClass>CompAbilityEffect_GiveHediff</compClass>
+            <hediffDef>SuperPerception</hediffDef>
+            <onlyBrain>True</onlyBrain>
+            <onlyApplyToSelf>True</onlyApplyToSelf>
+            <replaceExisting>true</replaceExisting>
+          </li>
+        </comps>
+    </AbilityDef>
+
+    <AbilityDef ParentName="SuperActivatableAbilityBase">
+        <defName>SuperPersuasion</defName>
+        <label>super persuasion</label>
+        <description>Turn on the charm, and influence people to do as you wish.</description>
+        <iconPath>Base/SuperPersuasion</iconPath>
+        <aiCanUse>false</aiCanUse>
+        <comps>
+          <li Class="CompProperties_AbilityGiveHediff">
+            <compClass>CompAbilityEffect_GiveHediff</compClass>
+            <hediffDef>SuperPersuasion</hediffDef>
+            <onlyBrain>True</onlyBrain>
+            <onlyApplyToSelf>True</onlyApplyToSelf>
+            <replaceExisting>true</replaceExisting>
+          </li>
+        </comps>
+    </AbilityDef>
+
+    <AbilityDef ParentName="SuperActivatableAbilityBase">
+        <defName>SuperPrecision</defName>
+        <label>super precision</label>
+        <description>With intense focus every shot and blow will find their mark.</description>
+        <iconPath>Base/SuperPrecision</iconPath>
+        <comps>
+          <li Class="CompProperties_AbilityGiveHediff">
+            <compClass>CompAbilityEffect_GiveHediff</compClass>
+            <hediffDef>SuperPrecision</hediffDef>
+            <onlyBrain>True</onlyBrain>
+            <onlyApplyToSelf>True</onlyApplyToSelf>
+            <replaceExisting>true</replaceExisting>
+          </li>
+        </comps>
+    </AbilityDef>
+
+    <AbilityDef ParentName="SuperActivatableAbilityBase">
+        <defName>SuperSpeed</defName>
+        <label>super speed</label>
+        <description>Take a sprinter's stance, and become naught but a blur to those around you.</description>
+        <iconPath>Base/SuperSpeed</iconPath>
+        <comps>
+          <li Class="CompProperties_AbilityGiveHediff">
+            <compClass>CompAbilityEffect_GiveHediff</compClass>
+            <hediffDef>SuperSpeed</hediffDef>
+            <onlyBrain>True</onlyBrain>
+            <onlyApplyToSelf>True</onlyApplyToSelf>
+            <replaceExisting>true</replaceExisting>
+          </li>
+        </comps>
+    </AbilityDef>
+
+    <AbilityDef ParentName="SuperActivatableAbilityBase">
+        <defName>SuperStrength</defName>
+        <label>super strength</label>
+        <description>Strain the muscles to achieve feats of strength that even machines find difficult to match.</description>
+        <iconPath>Base/SuperStrength</iconPath>
+        <comps>
+          <li Class="CompProperties_AbilityGiveHediff">
+            <compClass>CompAbilityEffect_GiveHediff</compClass>
+            <hediffDef>SuperStrength</hediffDef>
+            <onlyBrain>True</onlyBrain>
+            <onlyApplyToSelf>True</onlyApplyToSelf>
+            <replaceExisting>true</replaceExisting>
+          </li>
+        </comps>
+    </AbilityDef>
+</Defs>

@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <HediffDef Abstract="true" Name="SuperActivatableHediffBase">
+        <isBad>false</isBad>
+        <everCurableByItem>false</everCurableByItem>
+        <hediffClass>HediffWithComps</hediffClass>
+        <comps>
+          <li Class="HediffCompProperties_DisappearsOnDeath"/>
+          <li Class="HediffCompProperties_Disappears">
+            <showRemainingTime>True</showRemainingTime>
+          </li>
+        </comps>
+    </HediffDef>
+
+    <HediffDef ParentName="SuperActivatableHediffBase">
+        <defName>SuperDurability</defName>
+        <label>super durability activated</label>
+        <description>This super's skin has become harder than even plasteel.</description>
+        <stages>
+            <li>
+                <hungerRateFactor>1.75</hungerRateFactor>
+                <statOffsets>
+                    <ArmorRating_Blunt>1</ArmorRating_Blunt>
+                    <ArmorRating_Sharp>1</ArmorRating_Sharp>
+                    <ArmorRating_Heat>1</ArmorRating_Heat>
+                </statOffsets>
+            </li>
+        </stages>
+    </HediffDef>
+
+    <HediffDef ParentName="SuperActivatableHediffBase">
+        <defName>SuperHealing</defName>
+        <label>super healing activated</label>
+        <description>This super's wound are healing at an exceptional pace, almost as quickly as they are made and sealed.</description>
+        <stages>
+            <li>
+                <hungerRateFactor>1.75</hungerRateFactor>
+                <statFactors>
+                    <ImmunityGainSpeed>10</ImmunityGainSpeed>
+                    <InjuryHealingFactor>10</InjuryHealingFactor>
+                </statFactors>
+                <statOffsets>
+                    <ImmunityGainSpeed>10</ImmunityGainSpeed>
+                    <InjuryHealingFactor>10</InjuryHealingFactor>
+                </statOffsets>
+            </li>
+        </stages>
+    </HediffDef>
+
+    <HediffDef ParentName="SuperActivatableHediffBase">
+        <defName>SuperIntelligence</defName>
+        <label>super intelligence activated</label>
+        <description>This super is deep in a trance, their mind exploring possibilities most could never hope to understand.</description>
+        <stages>
+            <li>
+                <hungerRateFactor>1.75</hungerRateFactor>
+                <statFactors>
+                    <ResearchSpeed>3</ResearchSpeed>
+                    <DrugSynthesisSpeed>3</DrugSynthesisSpeed>
+                    <GeneralLaborSpeed>3</GeneralLaborSpeed>
+                    <GlobalLearningFactor>3</GlobalLearningFactor>
+                    <LearningRateFactor>3</LearningRateFactor>
+                    <HackingSpeed MayRequire="ludeon.rimworld.ideology">3</HackingSpeed>
+                </statFactors>
+            </li>
+        </stages>
+    </HediffDef>
+
+    <HediffDef ParentName="SuperActivatableHediffBase">
+        <defName>SuperPerception</defName>
+        <label>super perception activated</label>
+        <description>This super's eyes are darting all over the place, seeing details that are normally hidden to the naked eye.</description>
+        <stages>
+            <li>
+                <hungerRateFactor>1.75</hungerRateFactor>
+                <statFactors>
+                    <ShootingAccuracyPawn>3</ShootingAccuracyPawn>
+                    <MeleeDodgeChance>3</MeleeDodgeChance>
+                    <MeleeHitChance>3</MeleeHitChance>
+                </statFactors>
+            </li>
+        </stages>
+    </HediffDef>
+
+    <HediffDef ParentName="SuperActivatableHediffBase">
+        <defName>SuperPersuasion</defName>
+        <label>super persuasion activated</label>
+        <description>This super has quite literally turned on the charm, and now people just can't help but listen to whatever they say.</description>
+        <stages>
+            <li>
+                <hungerRateFactor>1.75</hungerRateFactor>
+                <statFactors>
+                    <SocialImpact>3</SocialImpact>
+                    <NegotiationAbility>3</NegotiationAbility>
+                    <ConversionPower MayRequire="ludeon.rimworld.ideology">3</ConversionPower>
+                </statFactors>
+                <capMods>
+                  <li>
+                    <capacity>Talking</capacity>
+                    <offset>2.0</offset>
+                  </li>
+                </capMods>
+            </li>
+        </stages>
+    </HediffDef>
+
+    <HediffDef ParentName="SuperActivatableHediffBase">
+        <defName>SuperPrecision</defName>
+        <label>super precision activated</label>
+        <description>This super has become accurate enough that their movements almost seem machine-like.</description>
+        <stages>
+            <li>
+                <hungerRateFactor>1.75</hungerRateFactor>
+                <statFactors>
+                    <ShootingAccuracyPawn>5</ShootingAccuracyPawn>
+                    <MeleeDodgeChance>5</MeleeDodgeChance>
+                    <MeleeHitChance>5</MeleeHitChance>
+                    <PawnTrapSpringChance>0.01</PawnTrapSpringChance>
+                    <IncomingDamageFactor>0.9</IncomingDamageFactor>
+                </statFactors>
+            </li>
+        </stages>
+    </HediffDef>
+
+    <HediffDef ParentName="SuperActivatableHediffBase">
+        <defName>SuperSpeed</defName>
+        <label>super speed activated</label>
+        <description>This super is very difficult to keep track of. For every punch they land, four more quickly follow, and they move faster than the gun they hold.</description>
+        <stages>
+            <li>
+                <hungerRateFactor>1.75</hungerRateFactor>
+                <statFactors>
+                    <StaggerDurationFactor>0.01</StaggerDurationFactor>
+                    <MeleeDodgeChance>5</MeleeDodgeChance>
+                    <MeleeDamageFactor>5</MeleeDamageFactor>
+                </statFactors>
+                <statOffsets>
+                    <AimingDelayFactor>-5</AimingDelayFactor>
+                </statOffsets>
+                <capMods>
+                  <li>
+                    <capacity>Moving</capacity>
+                    <offset>2.0</offset>
+                  </li>
+                </capMods>
+            </li>
+        </stages>
+    </HediffDef>
+
+    <HediffDef ParentName="SuperActivatableHediffBase">
+        <defName>SuperStrength</defName>
+        <label>super strength activated</label>
+        <description>This super's muscles seem to be bulging, and it's probably best to avoid finding out what they can do the hard way.</description>
+        <stages>
+            <li>
+                <hungerRateFactor>1.75</hungerRateFactor>
+                <statFactors>
+                    <CarryingCapacity>100</CarryingCapacity>
+                    <MeleeDamageFactor>20</MeleeDamageFactor>
+                </statFactors>
+            </li>
+        </stages>
+    </HediffDef>
+</Defs>

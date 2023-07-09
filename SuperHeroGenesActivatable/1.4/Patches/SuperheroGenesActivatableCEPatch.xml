@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+    <Operation Class="PatchOperationSequence">
+        <operations>
+            <li Class="PatchOperationReplace" MayRequire="ceteam.combatextended">
+                <xpath>Defs/HediffDef[defName="SuperDurability"]/stages/li/statOffsets</xpath>
+                <value>
+                    <statOffsets>
+                        <ArmorRating_Blunt>100</ArmorRating_Blunt>
+                        <ArmorRating_Sharp>100</ArmorRating_Sharp>
+                        <ArmorRating_Heat>1</ArmorRating_Heat>
+                    </statOffsets>
+                </value>
+            </li>
+
+            <li Class="PatchOperationReplace" MayRequire="ceteam.combatextended">
+                <xpath>Defs/HediffDef[defName="SuperPerception"]/stages/li/statFactors</xpath>
+                <value>
+                    <statFactors>
+                        <ShootingAccuracyPawn>1.66</ShootingAccuracyPawn>
+                        <AimingAccuracy>1.5</AimingAccuracy>
+                        <MeleeDodgeChance>1.1</MeleeDodgeChance>
+                        <MeleeHitChance>1.2</MeleeHitChance>
+                        <MeleeParryChance>1.2</MeleeParryChance>
+                    </statFactors>
+                </value>
+            </li>
+
+            <li Class="PatchOperationReplace" MayRequire="ceteam.combatextended">
+                <xpath>Defs/HediffDef[defName="SuperPrecision"]/stages/li/statFactors</xpath>
+                <value>
+                    <statFactors>
+                        <ShootingAccuracyPawn>2.33</ShootingAccuracyPawn>
+                        <AimingAccuracy>2</AimingAccuracy>
+                        <MeleeDodgeChance>1.15</MeleeDodgeChance>
+                        <MeleeHitChance>1.25</MeleeHitChance>
+                        <MeleeParryChance>1.25</MeleeParryChance>
+                        <PawnTrapSpringChance>0.1</PawnTrapSpringChance>
+                        <IncomingDamageFactor>0.9</IncomingDamageFactor>
+                    </statFactors>
+                </value>
+            </li>
+
+            <li Class="PatchOperationReplace" MayRequire="ceteam.combatextended">
+                <xpath>Defs/HediffDef[defName="SuperSpeed"]/stages/li/statOffsets</xpath>
+                <value>
+                    <statOffsets>
+                        <AimingDelayFactor>-2.5</AimingDelayFactor>
+                    </statOffsets>
+                </value>
+            </li>
+
+            <li Class="PatchOperationReplace" MayRequire="ceteam.combatextended">
+                <xpath>Defs/HediffDef[defName="SuperSpeed"]/stages/li/statFactors</xpath>
+                <value>
+                    <statFactors>
+                        <StaggerDurationFactor>0.1</StaggerDurationFactor>
+                        <MeleeDodgeChance>1.15</MeleeDodgeChance>
+                        <MeleeHitChance>1.25</MeleeHitChance>
+                        <MeleeParryChance>1.25</MeleeParryChance>
+                    </statFactors>
+                </value>
+            </li>
+
+            <li Class="PatchOperationAdd" MayRequire="ceteam.combatextended">
+                <xpath>Defs/HediffDef[defName="SuperStrength"]/stages/li/statFactors</xpath>
+                <value>
+                    <CarryBulk>100</CarryBulk>
+                </value>
+            </li>
+        </operations>
+    </Operation>
+</Patch>
