@@ -11,9 +11,9 @@
         <disableGizmoWhileUndrafted>False</disableGizmoWhileUndrafted>
         <warmupStartSound>CombatCommand_Warmup</warmupStartSound>
         <aiCanUse>true</aiCanUse>
-        <cooldownTicksRange>2500</cooldownTicksRange>
+        <cooldownTicksRange>10000</cooldownTicksRange>
         <statBases>
-          <Ability_Duration>21</Ability_Duration>
+          <Ability_Duration>84</Ability_Duration>
         </statBases>
         <verbProperties>
           <verbClass>Verb_CastAbility</verbClass>

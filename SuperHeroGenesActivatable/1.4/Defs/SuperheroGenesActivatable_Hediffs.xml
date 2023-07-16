@@ -18,7 +18,7 @@
         <description>This super's skin has become harder than even plasteel.</description>
         <stages>
             <li>
-                <hungerRateFactor>1.75</hungerRateFactor>
+                <hungerRateFactor>1.2</hungerRateFactor>
                 <statOffsets>
                     <ArmorRating_Blunt>1</ArmorRating_Blunt>
                     <ArmorRating_Sharp>1</ArmorRating_Sharp>
@@ -34,7 +34,7 @@
         <description>This super's wound are healing at an exceptional pace, almost as quickly as they are made and sealed.</description>
         <stages>
             <li>
-                <hungerRateFactor>1.75</hungerRateFactor>
+                <hungerRateFactor>1.2</hungerRateFactor>
                 <statFactors>
                     <ImmunityGainSpeed>10</ImmunityGainSpeed>
                     <InjuryHealingFactor>10</InjuryHealingFactor>
@@ -53,7 +53,7 @@
         <description>This super is deep in a trance, their mind exploring possibilities most could never hope to understand.</description>
         <stages>
             <li>
-                <hungerRateFactor>1.75</hungerRateFactor>
+                <hungerRateFactor>1.2</hungerRateFactor>
                 <statFactors>
                     <ResearchSpeed>3</ResearchSpeed>
                     <DrugSynthesisSpeed>3</DrugSynthesisSpeed>
@@ -72,7 +72,7 @@
         <description>This super's eyes are darting all over the place, seeing details that are normally hidden to the naked eye.</description>
         <stages>
             <li>
-                <hungerRateFactor>1.75</hungerRateFactor>
+                <hungerRateFactor>1.2</hungerRateFactor>
                 <statFactors>
                     <ShootingAccuracyPawn>3</ShootingAccuracyPawn>
                     <MeleeDodgeChance>3</MeleeDodgeChance>
@@ -88,7 +88,7 @@
         <description>This super has quite literally turned on the charm, and now people just can't help but listen to whatever they say.</description>
         <stages>
             <li>
-                <hungerRateFactor>1.75</hungerRateFactor>
+                <hungerRateFactor>1.2</hungerRateFactor>
                 <statFactors>
                     <SocialImpact>3</SocialImpact>
                     <NegotiationAbility>3</NegotiationAbility>
@@ -110,7 +110,7 @@
         <description>This super has become accurate enough that their movements almost seem machine-like.</description>
         <stages>
             <li>
-                <hungerRateFactor>1.75</hungerRateFactor>
+                <hungerRateFactor>1.2</hungerRateFactor>
                 <statFactors>
                     <ShootingAccuracyPawn>5</ShootingAccuracyPawn>
                     <MeleeDodgeChance>5</MeleeDodgeChance>
@@ -128,7 +128,7 @@
         <description>This super is very difficult to keep track of. For every punch they land, four more quickly follow, and they move faster than the gun they hold.</description>
         <stages>
             <li>
-                <hungerRateFactor>1.75</hungerRateFactor>
+                <hungerRateFactor>1.2</hungerRateFactor>
                 <statFactors>
                     <StaggerDurationFactor>0.01</StaggerDurationFactor>
                     <MeleeDodgeChance>5</MeleeDodgeChance>
@@ -153,7 +153,7 @@
         <description>This super's muscles seem to be bulging, and it's probably best to avoid finding out what they can do the hard way.</description>
         <stages>
             <li>
-                <hungerRateFactor>1.75</hungerRateFactor>
+                <hungerRateFactor>1.2</hungerRateFactor>
                 <statFactors>
                     <CarryingCapacity>100</CarryingCapacity>
                     <MeleeDamageFactor>20</MeleeDamageFactor>
