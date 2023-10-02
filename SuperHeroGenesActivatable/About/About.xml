@@ -25,11 +25,16 @@
   </loadAfter>
 
   <description>
-This mod makes super genes slightly more balanced by making the Super Genes have an activatable ability associated with them instead of constant stat bonuses. For example, instead of always having a massive bonus to strength, the pawn gains an activatable ability that grants the same stat stat boosts (Carry Capacity * 100 and Melee Damage * 20), in exchange for the pawn consuming 1.2 times as much nutrition while the ability is active. They will maintain their super states for two hours, after which they will require another two hours to recover that power.
+This mod makes super genes slightly more balanced by making the Super Genes have an activatable ability associated with them instead of constant stat bonuses. For example, instead of always having a massive bonus to strength, the pawn gains an activatable ability that grants the same stat boosts (Carry Capacity * 100 and Melee Damage * 20). The longer the pawn has the ability active, the more focused they become, but the more strain it puts on their heart. After 12 hours, the pawn has an ever increasing chance to have a heart attack. The abiilty can be deactivated at any time as long as the pawn is conscious and capable of movement.
 
-WARNING: The food loss multipliers do multiply with each other, so activating 3 at once will result in your super consuming nutrition being around 1.7 times the normal rate.
+The average chance of heart attack per day for each tier is:
+Safe: 0%
+Unsafe: 1%
+Alarming: 10%
+Dangerous: 100%
+Perilous: 1,000% 
 
-This will make superheroes weaker overall, as they can no longer use their full abilities constantly, because if they do you may find your food supply draining very quickly. This was made as a separate mod because some people may not want their superheroes to be more balanced for base game. For a full list of what is taken from the base super gene, look at the images above.
+WARNING: Each active super power calculates heart attack chance independently, meaning that having muliple powers active at the same time increases the risk of a heart attack considerably.
 
 This is CE Compatible
 
